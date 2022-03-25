@@ -1,0 +1,119 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Olympus Reborn (By: Sorln#3037)", "Midnight")
+local Tab = Window:NewTab("Powers")
+local Section = Tab:NewSection("Gods and Goddesses Powers")
+Section:NewButton("Rainbow Wave", "Iris Rainbow Wave", function()
+    print("Clicked")
+    local ohString1 = "wave"
+local ohVector32 = Vector3.new(-60.55952072143555, 255.11248779296875, 68.51655578613281)
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Iris.PowerEvents.IrisEvents:FireServer(ohString1, ohVector32)
+end)
+Section:NewButton("Love Stomp", "Aphrodite Love Stomp", function()
+    print("Clicked")
+    local ohString1 = "stomp"
+local ohVector32 = Vector3.new(-78.07243347167969, 200.7382049560547, -496.5075378417969)
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Aphrodite.PowerEvents.AphroditeEvents:FireServer(ohString1, ohVector32)
+end)
+Section:NewButton("Athena Wave", "Athena Powerful Blast", function()
+    print("Clicked")
+    local ohString1 = "wave"
+local ohVector32 = Vector3.new(-553.0718383789062, 94, -137.52090454101562)
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Athena.PowerEvents.AthenaEvents:FireServer(ohString1, ohVector32)
+end)
+Section:NewButton("Hestia Explosion", "Kaboomy", function()
+    print("Clicked")
+    local ohString1 = "explosion"
+local ohVector32 = Vector3.new(-538.0435791015625, 94, -145.8402557373047)
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Hestia.PowerEvents.HestiaEvents:FireServer(ohString1, ohVector32)
+end)
+Section:NewButton("Undying Love", "10 seconds of Love", function()
+    print("Clicked")
+    local ohString1 = "undying"
+local ohVector32 = Vector3.new(-60.370361328125, 202.14532470703125, -450.0094299316406)
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Aphrodite.PowerEvents.AphroditeEvents:FireServer(ohString1, ohVector32)
+end)
+local Tab = Window:NewTab("Spells")
+local Section = Tab:NewSection("Magic Spells")
+Section:NewButton("Veritas", "Hecate Spell Veritas", function()
+    print("Clicked")
+    local ohString1 = "Veritas"
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Hecate.PowerEvents.SpellEvents:FireServer(ohString1)
+end)
+Section:NewButton("Tempus", "Shockwave that Freezes people", function()
+    print("Clicked")
+    local ohString1 = "Tempus"
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Hecate.PowerEvents.SpellEvents:FireServer(ohString1)
+end)
+Section:NewButton("Volare", "Shockwave Sheild", function()
+    print("Clicked")
+    local ohString1 = "Volare"
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Circe.PowerEvents.SpellEvents:FireServer(ohString1)
+end)
+local Tab = Window:NewTab("Auras")
+local Section = Tab:NewSection("Add a Powerful Aura to your Charther")
+Section:NewButton("Sun Aura", "Shine Bright like the Sun", function()
+    print("Clicked")
+    local ohString1 = "speed"
+local ohVector32 = Vector3.new(-580.91357421875, 94, -161.44223022460938)
+
+game:GetService("ReplicatedStorage").Olympians.Gods.Apollo.PowerEvents.ApolloEvents:FireServer(ohString1, ohVector32)
+end)
+Section:NewButton("Turn Off Sun Aura", "Goodbye Sunlight", function()
+    print("Clicked")
+    local ohString1 = "end"
+local ohVector32 = Vector3.new(-563.1563110351562, 94, -179.42027282714844)
+
+game:GetService("ReplicatedStorage").Olympians.Gods.Apollo.PowerEvents.ApolloEvents:FireServer(ohString1, ohVector32)
+end)
+Section:NewButton("Rainbow Aura", "Rainbow Purrr", function()
+    print("Clicked")
+    local ohBoolean1 = true
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Iris.PowerEvents.FlightEvents:FireServer(ohBoolean1)
+end)
+Section:NewButton("Turn Off Rainbow Aura", "Rainbows have faded", function()
+    print("Clicked")
+    local ohBoolean1 = false
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Iris.PowerEvents.FlightEvents:FireServer(ohBoolean1)
+end)
+Section:NewButton("Dark Magic Aura", "Darkness is cool", function()
+    print("Clicked")
+    local ohBoolean1 = true
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Hecate.PowerEvents.FlightEvents:FireServer(ohBoolean1)
+end)
+Section:NewButton("Dark Magic Aura Off", "May the light Shine", function()
+    print("Clicked")
+    local ohBoolean1 = false
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Hecate.PowerEvents.FlightEvents:FireServer(ohBoolean1)
+end)
+Section:NewButton("Raven Aura", "Ohh Fancy", function()
+    print("Clicked")
+    local ohBoolean1 = true
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Hera.PowerEvents.FlightEvents:FireServer(ohBoolean1)
+end)
+Section:NewButton("Raven Aura Off", "Its Ok to tone it down", function()
+    print("Clicked")
+    local ohBoolean1 = false
+
+game:GetService("ReplicatedStorage").Olympians.Goddesses.Hera.PowerEvents.FlightEvents:FireServer(ohBoolean1)
+end)
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Player")
+Section:NewSlider("WalkSpeed", "Change WalkSpeed", 300, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section:NewSlider("JumpPower", "Change JumpPower", 250, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
